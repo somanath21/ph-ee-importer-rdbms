@@ -84,6 +84,9 @@ public class Transfer {
     @Column(name = "BATCH_ID")
     private String batchId;
 
+    @Column(name = "SUB_BATCH_ID")
+    private String subBatchId;
+
     @Column(name = "CLIENTCORRELATIONID")
     private String clientCorrelationId;
 
