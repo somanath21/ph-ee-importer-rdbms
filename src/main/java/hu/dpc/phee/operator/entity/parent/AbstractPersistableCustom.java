@@ -26,7 +26,7 @@ import java.io.Serializable;
 
 
 @MappedSuperclass
-public abstract class AbstractPersistableCustom<PK extends Serializable> implements Persistable<Long> {
+public abstract class AbstractPersistableCustom<K extends Serializable> implements Persistable<Long> {
 
     @Id
     @Column(name = "ID")

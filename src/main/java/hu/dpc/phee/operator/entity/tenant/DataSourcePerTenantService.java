@@ -26,11 +26,6 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.sql.DataSource;
-import java.util.HashMap;
-import java.util.Map;
-
-
 @Service
 public class DataSourcePerTenantService implements DisposableBean {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());

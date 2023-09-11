@@ -7,8 +7,7 @@ public class JsonPathReader {
     private static ParseContext jsonParser;
 
     static {
-        Configuration config = Configuration.defaultConfiguration()
-                .addOptions(Option.DEFAULT_PATH_LEAF_TO_NULL)
+        Configuration config = Configuration.defaultConfiguration().addOptions(Option.DEFAULT_PATH_LEAF_TO_NULL)
                 .addOptions(Option.SUPPRESS_EXCEPTIONS);
         jsonParser = JsonPath.using(config);
     }

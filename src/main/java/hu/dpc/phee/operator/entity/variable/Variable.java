@@ -1,6 +1,5 @@
 package hu.dpc.phee.operator.entity.variable;
 
-
 import hu.dpc.phee.operator.entity.parent.AbstractPersistableCustom;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
