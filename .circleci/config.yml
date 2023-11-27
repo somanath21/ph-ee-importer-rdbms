@@ -46,7 +46,6 @@ jobs:
       # Install Docker to build and push the image
       - setup_remote_docker:
           version: 20.10.14
-
       # Build the Docker image
       - run:
           name: Build Docker image
@@ -55,7 +54,7 @@ jobs:
             
             IMAGE_TAG=$CIRCLE_TAG
             ./gradlew clean bootJar
-            docker build -t openmf/ph-ee-importer-rdbms:latest .
+            docker build -t openmf/$CIRCLE_PR_REPONAME:latest .
 
             if [ "$CIRCLE_BRANCH" != "develop" ]; then
               PR_NUMBER=$(basename $CIRCLE_PULL_REQUEST)
